@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camilo's dev</title>
     
+    <!-- js -->
+    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -14,113 +17,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
      -->
 
+
+<!--  _____     _   _ _            -->
+<!-- | ____|___| |_(_) | ___  ___  -->
+<!-- |  _| / __| __| | |/ _ \/ __| -->
+<!-- | |___\__ \ |_| | | (_) \__ \ -->
+<!-- |_____|___/\__|_|_|\___/|___/ -->
     <!-- Font Awesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
     
     <!-- Configuración de Tailwind CSS -->
-    <script>
-        // Configuración personalizada de Tailwind
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#8B5E3C',
-                        beige: '#F5F0E6',
-                        olive: '#A3B18A',
-                        terracotta: '#E07A5F',
-                        lightblue: '#7FB5FF',
-                        darkbrown: '#3E2723',
-                    },
-                    fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
-                        'mono': ['JetBrains Mono', 'monospace'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'gradient': 'gradient 3s ease infinite',
-                        'bounce-slow': 'bounce 2s infinite',
-                        'pulse-slow': 'pulse 3s infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        gradient: {
-                            '0%, 100%': { backgroundPosition: '0% 50%' },
-                            '50%': { backgroundPosition: '100% 50%' },
-                        },
-                    },
-                    backgroundImage: {
-                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-                    },
-                }
-            },
-            darkMode: 'class',
-        }
-    </script>
+    <script src="JS/tailwind_config.js"></script>
     
-    <link rel="stylesheet" href="css1.css">
-    <!-- <style>
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth ;
-        }
-        
-        /* Parallax effect */
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        /* Glassmorphism effect */
-        .glass {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Gradient animation */
-        .gradient-bg {
-            background: linear-gradient(-45deg, #8B5E3C, #E07A5F, #A3B18A, #7FB5FF);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-        }
-        
-        /* Scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.6s ease-out;
-        }
-        
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #F5F0E6;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #8B5E3C;
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #6B4B2C;
-        }
-    </style> -->
+
+
 </head>
 
 <body class="font-inter bg-beige dark:bg-darkbrown text-gray-800 dark:text-beige transition-colors duration-300">
@@ -130,7 +42,9 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="font-poppins font-bold text-2xl text-primary dark:text-terracotta">
+                    <a href="#inicio">
                     <span class="font-mono">&lt;</span>Dev<span class="font-mono">/&gt;</span>
+                    </a>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -164,7 +78,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+
+<!--  ___ _   _ ___ ____ ___ ___   -->
+<!-- |_ _| \ | |_ _/ ___|_ _/ _ \  -->
+<!--  | ||  \| || | |    | | | | | -->
+<!--  | || |\  || | |___ | | |_| | -->
+<!-- |___|_| \_|___\____|___\___/  -->
     <section id="inicio" class="min-h-screen flex items-center justify-center relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-10">
@@ -176,8 +95,10 @@
         <div class="container mx-auto px-6 text-center z-10">
             <div class="reveal">
                 <h1 class="font-poppins text-5xl md:text-7xl font-bold mb-6">
-                    Hola, soy <span class="gradient-bg bg-clip-text text-transparent">Tu Nombre</span>
+                    Hola, soy <span class="gradient-bg bg-clip-text text-transparent">Camilo</span>
                 </h1>
+                <h2 class="text-2xl md:text-3xl mb-4">
+                    Pero tú puedes llamarme <span class="gradient-bg bg-clip-text text-transparent">milo</span></h2>
                 <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
                     Desarrollador Fullstack de 18 años apasionado por crear experiencias digitales increíbles
                 </p>
@@ -193,18 +114,22 @@
                 </div>
             </div>
             
-            <!-- Scroll indicator -->
+            <!-- flechita -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
                 <i class="fas fa-chevron-down text-primary text-2xl"></i>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Mí Section -->
+<!--  ____        _                          __ -->
+<!-- / ___|  ___ | |__  _ __ ___   _ __ ___ /_/ -->
+<!-- \___ \ / _ \| '_ \| '__/ _ \ | '_ ` _ \| | -->
+<!--  ___) | (_) | |_) | | |  __/ | | | | | | | -->
+<!-- |____/ \___/|_.__/|_|  \___| |_| |_| |_|_| -->
     <section id="sobre-mi" class="py-20 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="reveal text-center mb-16">
-                <h2 class="section-title">Sobre Mí</h2>
+                <h2 class="section-title ">Sobre Mí</h2>
                 <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                     Conoce un poco más sobre mi trayectoria y pasión por la tecnología
                 </p>
@@ -215,7 +140,10 @@
                     <div class="relative">
                         <!-- Placeholder para foto de perfil -->
                         <div class="w-80 h-80 mx-auto bg-gradient-to-br from-primary to-terracotta rounded-3xl shadow-2xl transform hover:rotate-3 transition-transform duration-300 flex items-center justify-center">
-                            <i class="fas fa-user text-white text-8xl"></i>
+
+                            <img src="img/camilosonriente.jpg" alt="Foto de perfil" class="rounded-full w-64 h-64 object-cover">
+
+                            <!-- <i class="fas fa-user text-white text-8xl"></i> -->
                         </div>
                         <!-- Elementos decorativos -->
                         <div class="absolute -top-4 -right-4 w-20 h-20 bg-olive rounded-full opacity-50 animate-pulse-slow"></div>
@@ -238,7 +166,7 @@
                     </p>
                     
                     <!-- Stats -->
-                    <div class="grid grid-cols-2 gap-6 pt-6">
+                    <!-- <div class="grid grid-cols-2 gap-6 pt-6">
                         <div class="text-center p-4 bg-beige dark:bg-gray-800 rounded-lg">
                             <div class="text-2xl font-bold text-primary dark:text-terracotta">15+</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300">Proyectos</div>
@@ -247,13 +175,19 @@
                             <div class="text-2xl font-bold text-primary dark:text-terracotta">3+</div>
                             <div class="text-sm text-gray-600 dark:text-gray-300">Años codificando</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Proyectos Section -->
+
+<!--  ____                            _             -->
+<!-- |  _ \ _ __ ___  _   _  ___  ___| |_ ___  ___  -->
+<!-- | |_) | '__/ _ \| | | |/ _ \/ __| __/ _ \/ __| -->
+<!-- |  __/| | | (_) | |_| |  __/ (__| || (_) \__ \ -->
+<!-- |_|   |_|  \___/ \__, |\___|\___|\__\___/|___/ -->
+<!--                  |___/                         -->
     <section id="proyectos" class="py-20 bg-beige dark:bg-darkbrown">
         <div class="container mx-auto px-6">
             <div class="reveal text-center mb-16">
@@ -348,7 +282,11 @@
         </div>
     </section>
 
-    <!-- Habilidades Section -->
+<!--  _   _    _    ____ ___ _     ___ ____    _    ____  _____ ____   -->
+<!-- | | | |  / \  | __ )_ _| |   |_ _|  _ \  / \  |  _ \| ____/ ___|  -->
+<!-- | |_| | / _ \ |  _ \| || |    | || | | |/ _ \ | | | |  _| \___ \  -->
+<!-- |  _  |/ ___ \| |_) | || |___ | || |_| / ___ \| |_| | |___ ___) | -->
+<!-- |_| |_/_/   \_\____/___|_____|___|____/_/   \_\____/|_____|____/  -->
     <section id="habilidades" class="py-20 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="reveal text-center mb-16">
@@ -378,14 +316,6 @@
                             <i class="fab fa-js-square text-yellow-500"></i>
                             <span>JavaScript ES6+</span>
                         </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react text-blue-400"></i>
-                            <span>React.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs text-green-500"></i>
-                            <span>Vue.js</span>
-                        </div>
                     </div>
                 </div>
                 
@@ -397,20 +327,12 @@
                     </div>
                     <div class="space-y-3">
                         <div class="skill-item">
-                            <i class="fab fa-node-js text-green-600"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
                             <i class="fab fa-python text-blue-600"></i>
                             <span>Python</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-fire text-orange-600"></i>
-                            <span>Express.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-flask text-gray-600"></i>
-                            <span>Flask</span>
+                            <i class="fas fa-thunder text-orange-600"></i>
+                            <span>FastAPI</span>
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-database text-green-600"></i>
@@ -427,20 +349,12 @@
                     </div>
                     <div class="space-y-3">
                         <div class="skill-item">
-                            <i class="fas fa-leaf text-green-500"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
                             <i class="fas fa-database text-blue-600"></i>
                             <span>PostgreSQL</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fas fa-database text-orange-500"></i>
-                            <span>MySQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-fire text-red-500"></i>
-                            <span>Firebase</span>
+                            <i class="fas fa-server text-orange-500"></i>
+                            <span>SQL Server</span>
                         </div>
                     </div>
                 </div>
@@ -465,8 +379,8 @@
                             <span>VS Code</span>
                         </div>
                         <div class="skill-item">
-                            <i class="fab fa-figma text-purple-600"></i>
-                            <span>Figma</span>
+                            <i class="fab fa-postman text-purple-600"></i>
+                            <span>Postman</span>
                         </div>
                     </div>
                 </div>
@@ -474,7 +388,11 @@
         </div>
     </section>
 
-    <!-- Contacto Section -->
+<!--   ____ ___  _   _ _____  _    ____ _____ ___   -->
+<!--  / ___/ _ \| \ | |_   _|/ \  / ___|_   _/ _ \  -->
+<!-- | |  | | | |  \| | | | / _ \| |     | || | | | -->
+<!-- | |__| |_| | |\  | | |/ ___ \ |___  | || |_| | -->
+<!--  \____\___/|_| \_| |_/_/   \_\____| |_| \___/  -->
     <section id="contacto" class="py-20 bg-beige dark:bg-darkbrown">
         <div class="container mx-auto px-6">
             <div class="reveal text-center mb-16">
@@ -498,7 +416,7 @@
                                 </div>
                                 <div>
                                     <p class="font-medium">Email</p>
-                                    <p class="text-gray-600 dark:text-gray-300">tu.email@ejemplo.com</p>
+                                    <p class="text-gray-600 dark:text-gray-300">kamsz.m0@gmail.com</p>
                                 </div>
                             </div>
                             
@@ -508,7 +426,7 @@
                                 </div>
                                 <div>
                                     <p class="font-medium">Ubicación</p>
-                                    <p class="text-gray-600 dark:text-gray-300">Tu Ciudad, País</p>
+                                    <p class="text-gray-600 dark:text-gray-300">Colombia</p>
                                 </div>
                             </div>
                             
@@ -530,17 +448,11 @@
                             Sígueme en redes
                         </h4>
                         <div class="flex space-x-4">
-                            <a href="#" class="social-link">
+                            <a href="https://github.com/camilosuarezmora" class="social-link" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="social-link">
+                            <a href="https://www.linkedin.com/in/camilo0oo0oo0oodev" class="social-link" target="_blank">
                                 <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -587,7 +499,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
+<!--  _____ ___   ___ _____ _____ ____   -->
+<!-- |  ___/ _ \ / _ \_   _| ____|  _ \  -->
+<!-- | |_ | | | | | | || | |  _| | |_) | -->
+<!-- |  _|| |_| | |_| || | | |___|  _ <  -->
+<!-- |_|   \___/ \___/ |_| |_____|_| \_\ -->
     <footer class="bg-primary dark:bg-gray-900 text-white py-8">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between">
@@ -595,7 +511,8 @@
                     <span class="font-mono">&lt;</span>Dev<span class="font-mono">/&gt;</span>
                 </div>
                 <p class="text-center text-beige">
-                    © 2025 Tu Nombre. Hecho con ❤️ y mucho café ☕
+                    © 2025 Camilo Suárez. <br>
+                    Hecho con ❤️ y mucho tinto ☕
                 </p>
                 <div class="flex space-x-4 mt-4 md:mt-0">
                     <a href="#inicio" class="hover:text-terracotta transition-colors duration-200">Volver arriba</a>
@@ -604,339 +521,13 @@
         </div>
     </footer>
 
-    <style>
-        /* Estilos adicionales para componentes */
-        .nav-link {
-            @apply text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-terracotta font-medium transition-colors duration-200 relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: currentColor;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        
-        .btn-primary {
-            @apply bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center;
-        }
-        
-        .btn-secondary {
-            @apply border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center;
-        }
-        
-        .section-title {
-            @apply text-4xl md:text-5xl font-poppins font-bold text-primary dark:text-terracotta mb-4;
-        }
-        
-        .project-card {
-            @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden;
-        }
-        
-        .tech-tag {
-            @apply bg-primary/10 text-primary dark:bg-terracotta/10 dark:text-terracotta px-3 py-1 rounded-full text-sm font-medium;
-        }
-        
-        .skill-category {
-            @apply bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
-        }
-        
-        .skill-item {
-            @apply flex items-center space-x-3 p-2 hover:bg-beige dark:hover:bg-gray-700 rounded-lg transition-colors duration-200 cursor-default;
-        }
-        
-        .social-link {
-            @apply w-12 h-12 bg-primary/10 hover:bg-primary hover:text-white rounded-lg flex items-center justify-center text-primary transition-all duration-300 transform hover:scale-110;
-        }
-        
-        .form-input {
-            @apply w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-200;
-        }
-    </style>
 
-    <script>
-        // JavaScript para funcionalidades interactivas
-        
-        // Dark mode toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const html = document.documentElement;
-        
-        // Verificar preferencia guardada o usar preferencia del sistema
-        const currentTheme = localStorage.getItem('theme') || 
-            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        
-        if (currentTheme === 'dark') {
-            html.classList.add('dark');
-        }
-        
-        themeToggle.addEventListener('click', () => {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-        
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Scroll reveal animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-        
-        // Observar todos los elementos con clase 'reveal'
-        document.querySelectorAll('.reveal').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Smooth scrolling para enlaces de navegación
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Cerrar menú móvil si está abierto
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-        
-        // Parallax effect para el hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            const heroSection = document.getElementById('inicio');
-            if (heroSection) {
-                heroSection.style.transform = `translateY(${rate}px)`;
-            }
-        });
-        
-        // Formulario de contacto
-        const contactForm = document.querySelector('#contacto form');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Aquí puedes agregar la lógica para enviar el formulario
-            // Por ejemplo, usando EmailJS, Netlify Forms, o tu propio backend
-            
-            // Simulación de envío exitoso
-            alert('¡Gracias por tu mensaje! Te responderé pronto.');
-            contactForm.reset();
-        });
-        
-        // Animación de typing para el título principal (opcional)
-        function typeWriter(element, text, speed = 100) {
-            let i = 0;
-            element.innerHTML = '';
-            function type() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                }
-            }
-            type();
-        }
-        
-        // Navbar background change on scroll
-        const navbar = document.querySelector('nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('bg-white/95', 'dark:bg-darkbrown/95');
-            } else {
-                navbar.classList.remove('bg-white/95', 'dark:bg-darkbrown/95');
-            }
-        });
-        
-        // Skills hover effect
-        document.querySelectorAll('.skill-item').forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                item.style.transform = 'translateX(10px)';
-            });
-            
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = 'translateX(0)';
-            });
-        });
-        
-        // Project cards tilt effect
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mouseenter', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                
-                card.style.transform = `perspective(1000px) rotateX(${y / 10}deg) rotateY(${x / 10}deg) translateZ(10px)`;
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
-            });
-        });
-        
-        // Cursor personalizado (opcional)
-        const cursor = document.createElement('div');
-        cursor.classList.add('fixed', 'w-4', 'h-4', 'bg-primary', 'rounded-full', 'pointer-events-none', 'z-50', 'transition-all', 'duration-200', 'hidden', 'md:block');
-        document.body.appendChild(cursor);
-        
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX - 8 + 'px';
-            cursor.style.top = e.clientY - 8 + 'px';
-        });
-        
-        // Expandir cursor en elementos interactivos
-        const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-item');
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor.style.transform = 'scale(2)';
-                cursor.style.backgroundColor = '#E07A5F';
-            });
-            
-            el.addEventListener('mouseleave', () => {
-                cursor.style.transform = 'scale(1)';
-                cursor.style.backgroundColor = '#8B5E3C';
-            });
-        });
-        
-        // Animación de carga inicial
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
-            
-            // Animar elementos del hero
-            setTimeout(() => {
-                document.querySelectorAll('#inicio .reveal').forEach((el, index) => {
-                    setTimeout(() => {
-                        el.classList.add('active');
-                    }, index * 200);
-                });
-            }, 500);
-        });
-        
-        // Easter egg: Konami Code
-        let konamiCode = [];
-        const pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
-        
-        document.addEventListener('keydown', (e) => {
-            konamiCode.push(e.code);
-            if (konamiCode.length > pattern.length) {
-                konamiCode.shift();
-            }
-            
-            if (JSON.stringify(konamiCode) === JSON.stringify(pattern)) {
-                // Easter egg activado
-                document.body.style.animation = 'rainbow 2s infinite';
-                setTimeout(() => {
-                    document.body.style.animation = '';
-                }, 4000);
-                console.log('🎉 ¡Easter egg activado! ¡Eres increíble!');
-            }
-        });
-    </script>
-    
-    <!-- <style>
-        @keyframes rainbow {
-            0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(360deg); }
-        }
-        
-        /* Loader inicial */
-        body:not(.loaded) {
-            overflow: hidden;
-        }
-        
-        body:not(.loaded)::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #8B5E3C, #E07A5F);
-            z-index: 9999;
-            animation: fadeOut 1s ease-out 0.5s forwards;
-        }
-        
-        @keyframes fadeOut {
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-        
-        /* Responsividad mejorada */
-        @media (max-width: 768px) {
-            .section-title {
-                @apply text-3xl;
-            }
-            
-            .btn-primary,
-            .btn-secondary {
-                @apply px-6 py-2 text-sm;
-            }
-        }
-        
-        /* Animaciones adicionales */
-        .animate-fadeInUp {
-            animation: fadeInUp 0.6s ease-out;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Mejoras de accesibilidad */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-        
-        /* Focus states mejorados */
-        button:focus,
-        a:focus,
-        input:focus,
-        textarea:focus {
-            outline: 2px solid #8B5E3C;
-            outline-offset: 2px;
-        }
-    </style> -->
+<!--      _ ____   -->
+<!--     | / ___|  -->
+<!--  _  | \___ \  -->
+<!-- | |_| |___) | -->
+<!--  \___/|____/  -->
+<script src="JS/interactive.js"></script>
+
 </body>
 </html>
